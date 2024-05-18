@@ -1,0 +1,384 @@
+.App {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7faff;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar > h1 {
+    font-size: 2.5rem;
+}
+
+.dash-actions {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 2px 8px 0px #1A38750D;
+    width: 8rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.dash-actions > img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+dash-actions-hr {
+    display: block;
+    height: 1.5rem;
+    border: 0;
+    border-right: 1px solid #CBCBCB;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 248px;
+    height: 306px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px 0px #1A38750D;
+    padding: 20px;
+    background-color: white;
+}
+
+.overview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlights-activities {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background-color: white;
+    box-shadow: 0px 2px 8px 0px #1A38750D;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: white;
+    width: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0px 2px 8px 0px #1A38750D;
+}
+
+#logo {
+    width: 2.5rem;
+}
+
+.navItems {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.overview {
+    gap: 1.5rem;
+}
+
+.pieChart {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: translateY(26px);
+    background-image: conic-gradient(
+            #FFCB49 0 110deg,
+            #7464FF 0 180deg,
+            #4FD2B5 0 180deg
+    );
+    align-self: center;
+}
+
+.pieChart::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.total-status {
+    z-index: 20;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-5px);
+}
+
+.upcoming-status, .ongoing-status, .completed-status {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+
+.upcoming-status > span, .ongoing-status > span, .completed-status > span {
+    font-weight: 600;
+}
+
+.upcoming-status {
+    background: linear-gradient(90deg, #FFFFFF 0%, #FFCB49 100%);
+}
+
+.ongoing-status {
+    background: linear-gradient(90deg, #FFFFFF 0%, #7464FF 100%);
+}
+
+.completed-status {
+    background: linear-gradient(90deg, #FFFFFF 0%, #4FD2B5 100%);
+}
+
+.status-label {
+    color: #676666;
+}
+
+.status-value {
+    font-weight: bold;
+}
+
+.quick-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+quick-actions-hr {
+    display: block;
+    height: 4rem;
+    border: 0;
+    border-right: 1px solid #CBCBCB;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    height: 100px;
+    box-shadow: 0px 2px 8px 0px #1A38750D;
+    border-radius: 16px;
+    padding: 0 1rem;
+}
+
+.actions > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.actions > div > img {
+    width: 1.5rem;
+}
+
+.alerts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.alerts > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#view-all {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.alerts > div > div > span {
+    font-size: 18px;
+    color: #1A3875;
+}
+
+.alerts > div > div > img {
+    width: 1.5rem;
+}
+
+.alert-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    width: 560px;
+    height: 186px;
+    box-shadow: 0px 2px 8px 0px #1A38750D;
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+.truck-detail > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.truck-detail {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.truck-detail > div > img {
+    width: 2rem;
+    padding: 0.3rem;
+    border-radius: 4px;
+    background-color: #E0EAFF;
+    box-shadow: 0px 0px 2px 0px #D0414126;
+}
+
+.ignore-resolve-btns {
+    display: flex;
+    gap: 1rem;
+    align-self: end;
+}
+
+#ignore, #resolve {
+    width: 6rem;
+    border: none;
+    font-size: 16px;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#ignore {
+    width: 10rem;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #1A3875;
+}
+
+#resolve {
+    color: white;
+    background-color: #1A3875;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.highlights-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.income-expense {
+    display: flex;
+    justify-content: space-between;
+}
+
+.income-expense > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #CBCBCB;
+    border-radius: 4px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.income-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #148714;
+}
+
+.expense-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #D04141;
+}
+
+.payment {
+    color: #676666;
+    font-size: 12px;
+}
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.completed-activities, .scheduled-activities {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.completed-activities-list, .scheduled-activities-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CBCBCB;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.completed-activities-list > span, .scheduled-activities-list > span {
+    padding: 1rem;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+.view-all-activities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-all-activities > span {
+    cursor: pointer;
+    text-decoration: underline;
+}
